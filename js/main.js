@@ -109,13 +109,8 @@
 
       var newTodoTitle = $(e.currentTarget).find('input[type=text]').val()
 
-<<<<<<< HEAD
-      var task = new App.Models.Task({ title: newTodoTitle })
-      if (! newTodoTitle ) return
-=======
       var task = new App.Models.Task({ title: newTodoTitle },{validation: true})
       if ( ! newTodoTitle ) return
->>>>>>> gh-pages
       this.collection.add(task)
 
       var input = $('#input')
@@ -126,10 +121,6 @@
 
   })
 
-
-
-  // change back to var tasksCollection
-  // window.tasksCollection just makes it available in the console
   var tasksCollection = new App.Collections.Tasks([])
 
   var addTaskView = new App.Views.AddTodo({ collection: tasksCollection })
