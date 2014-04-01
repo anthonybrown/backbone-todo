@@ -96,24 +96,26 @@
   App.Views.AddTodo = Backbone.View.extend({
     el: '#addTodo'
 
-  , events: {
-      'submit': 'submit'
+  , validate: function (attrs, options) {
+      if (! $.trim(attrs.task) ) {
+        return 'A task requires a valid title'
+      }
     }
 
-  , initialize: function () {
-
+  , events: {
+      'submit': 'submit'
     }
 
   , submit: function (e) {
       e.preventDefault()
 
+      var input = $('#input')
       var newTodoTitle = $(e.currentTarget).find('input[type=text]').val()
 
       var task = new App.Models.Task({ title: newTodoTitle },{validation: true})
       if ( ! newTodoTitle ) return
       this.collection.add(task)
 
-      var input = $('#input')
       input.val('')
       input.focus()
 
@@ -131,3 +133,4 @@
   $('#input').val('')
 
 }(jQuery, window, document))
+
