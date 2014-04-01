@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> -- <role> -- <twitter>
+    Tony -- Designer/Developer -- pixelBender67
+
+# THANKS
+
+    <name>
+    the html5bp team, and anyone that has
+    given back to the open source community
+
+    Special thanks to Jeremy for making Backbone and Underscore js
+    they have changed the way I code applications in general
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr, BackboneJS, UndersoreJS, NodeJS, Git, github

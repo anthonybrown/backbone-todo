@@ -1,0 +1,20 @@
+{
+  "name": "backbone-todo",
+  "version": "0.0.2",
+  "description": "backbonejs app",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "backbonejs"
+  ],
+  "author": "anthonybrown",
+  "license": "MIT",
+  "devDependencies": {
+    "karma": "^0.12.1"
+  }
+}
