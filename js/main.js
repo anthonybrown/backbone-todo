@@ -109,8 +109,13 @@
 
       var newTodoTitle = $(e.currentTarget).find('input[type=text]').val()
 
+<<<<<<< HEAD
+      var task = new App.Models.Task({ title: newTodoTitle })
+      if (! newTodoTitle ) return
+=======
       var task = new App.Models.Task({ title: newTodoTitle },{validation: true})
       if ( ! newTodoTitle ) return
+>>>>>>> gh-pages
       this.collection.add(task)
 
       var input = $('#input')
