@@ -109,12 +109,13 @@
 
       var newTodoTitle = $(e.currentTarget).find('input[type=text]').val()
 
-      var task = new App.Models.Task({ title: newTodoTitle })
+      var task = new App.Models.Task({ title: newTodoTitle },{validation: true})
+      if ( ! newTodoTitle ) return
       this.collection.add(task)
 
-    var input = $('#input')
-    input.val('')
-    input.focus()
+      var input = $('#input')
+      input.val('')
+      input.focus()
 
     }
 
